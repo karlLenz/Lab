@@ -79,7 +79,7 @@ void PrintTreapMenu()
 				case TreapCommand::TESTING:
 				{
 					cout << "Количество элементов: ";
-					Testing(GetValue<size_t>(0, UINT_MAX, IsRange));
+					Testing(GetValue<size_t>());
 					system("pause");
 					break;
 				}
