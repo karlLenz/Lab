@@ -6,6 +6,7 @@
 #include "../Lab1DynamicArray/GetValue.h"
 #include "../GetRandomValue.h"
 #include "MenuCommands.h"
+#include "Testing.h"
 using namespace std;
 using DataType = int;
 

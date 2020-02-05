@@ -5,6 +5,7 @@ enum class CommandMenu
 {
 	AVL_TREE,
 	RED_BLACK_TREE,
+	TESTING,
 	EXIT
 };
 

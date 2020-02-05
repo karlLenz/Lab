@@ -25,6 +25,12 @@ int main()
 				PrintMenu(tree);
 				break;
 			}
+			case CommandMenu::TESTING:
+			{
+				cout << "Введите количество элементов: ";
+				Testing(GetValue<size_t>());
+				break;
+			}
 			case CommandMenu::EXIT:
 			{
 				return 0;
