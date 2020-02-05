@@ -29,6 +29,7 @@ int main()
 			{
 				cout << "Введите количество элементов: ";
 				Testing(GetValue<size_t>());
+				system("pause");
 				break;
 			}
 			case CommandMenu::EXIT:
