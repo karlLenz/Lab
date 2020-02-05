@@ -158,6 +158,7 @@ inline void AvlTree<T>::RemoveRecursive(AvlTreeNode<T>*& current, T key)
 		AvlTreeNode<T>* newSuccessor = GetSuccessor(current);
 		delete current;
 		current = newSuccessor;
+		return;
 	}
 	else if (key < current->Data)
 	{
@@ -167,11 +168,7 @@ inline void AvlTree<T>::RemoveRecursive(AvlTreeNode<T>*& current, T key)
 	{
 		RemoveRecursive(current->Right, key);
 	}
-	
-	if (current != nullptr)
-	{
-		Balance(current);
-	}
+	Balance(current);
 }
 
 
