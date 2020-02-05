@@ -6,6 +6,7 @@ template <class T>
 class AvlTree
 {
 public:
+	AvlTree() : _root(nullptr) {}
 	~AvlTree() { DestroyTree(_root); }
 	void Add(T key) { AddRecursive(_root, key); }
 	void Remove(T key) { RemoveRecursive(_root, key); }
